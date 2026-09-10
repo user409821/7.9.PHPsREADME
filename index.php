@@ -12,7 +12,7 @@
     ?>
 
     <div>
-        <?php <p> tento kod je vnutro php </p>?>
+        <?php echo "<p> tento kod je vnutro php </p>"; ?>
     </div>
     
     <?php 
