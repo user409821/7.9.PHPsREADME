@@ -6,6 +6,6 @@
     <title>Premenne</title>
 </head>
 <body>
-    <h1>tneto web je zamerany na premenne</h1>
+    <h1>tento web je zamerany na premenne</h1>
 </body>
 </html>
