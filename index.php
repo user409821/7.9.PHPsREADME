@@ -8,6 +8,20 @@
 <body>
     <?php 
     echo "Ahoj";
+    
     ?>
+
+    <div>
+        <?php <p> tento kod je vnutro php </p>?>
+    </div>
+    
+    <?php 
+    echo "Dalsie echo";
+
+    print('vypis pomocou funkcie print');
+    
+    ?>
+
+
 </body>
 </html>
