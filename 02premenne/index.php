@@ -6,6 +6,9 @@
     <title>Premenne</title>
 </head>
 <body>
+    //premenna je miesto v pamati, pod ktorou sa nachádza určitá hodnota 
+    //deklaruje sa znakom dolara + nazov 
+    //
     <?php
     echo "<h1>tento web je zamerany na premenne</h1>";
     $cislo = 5;
