@@ -14,7 +14,7 @@ automaticke pretypovanie = prevod medzi dát. typmi
 echo strlen($text); dlzka stringu
 str_replace vymeni stringy
 konstanta = identifikátor pre hodnoty, kt sa nemenia a nemozu menit
-matematické operátory: aritmetické(matematicka) priraďovacie: += porovnávacie: === a logické (&&,||) 
+matematické operátory: aritmetické(matematika) priraďovacie: += porovnávacie: === a logické (&&,||) 
 //bude otazka aky je rozdiel medzi == a =  
 
 
