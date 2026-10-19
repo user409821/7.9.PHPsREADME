@@ -31,7 +31,18 @@
         }
 
     }
+    //cyklus od 0 do 6, v kazdom cykle vytvorte kombinaciu kariet
+    //kazdy dostane 2 karty
+    //hodnoty 2-10, j(11), q(12), k(13), a(14)  
+    //znaky 4
+    $hodnota = random_int(2, 14);
     do while()
+    for($i = 0; $i < 6; $i++){
+        echo "Prva karta: "
+        echo "<br>";
+        echo "Druha karta: " . $farba . " " . $znak . " " . $hodnota ;
+
+    }
     
     //uloha kazdy z textov bude vo fonte o 2 vacsi zaciname s 10px
     ?>
