@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,6 +14,7 @@
     //do while je typ cyklu podobny while, ale kod sa vyplni aspon raz, podmienka sa kontroluje na konci
     //foreach je typ cyklu, kt. prechadza hodnoty poli
     <?php
+    ini_set('display_errors', 1);
     //$mena = array();
     $fontsize = 10;
     <p style="font-size : <?php echo $fontsize; ?>px"></p>
