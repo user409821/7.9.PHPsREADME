@@ -22,8 +22,66 @@
         echo "br";
 
     }
-    <?php 
-    ?>
+    <?php
+    //$mena = array();
+    <p style="font-size : 10px"></p>
+    $fontsize = 10;
+    $red = random_int(0, 255);
+    $green = random_int(0, 255);
+    $blue = random_int(0, 255);
+    $k = 1;
+    while($k<10, $k++){
+        for($i = 0; $i < 10; $i++){
+            //fontsize +2 nabuduce pisomka
+            //slovo hodina ma v kazdom cykle nahodnu farbu
+            echo "<p style='font-size: {$fontsize}px'>najlepsia <span style='color: RGB($red, $green, $blue)'>hodina</span> na svete</p>";
+            echo "<br>";
+            $fontsize += 5;
+
+        }
+
+    }
+    //cyklus od 0 do 6, v kazdom cykle vytvorte kombinaciu kariet
+    //kazdy dostane 2 karty
+    //hodnoty 2-10, j(11), q(12), k(13), a(14) 
+    //znaky 4 srdce ♥ ♣ ♠ ♦ 
+    do while()
+    for($i = 0; $i < 6; $i++){
+        
+        for ($j = 1; $j <= 2; $j++){
+        $hodnota = random_int(2, 14);
+        if ($hodnota == 11){
+            $hodnota = "J";
+        } else if ($hodnota == 12){
+            $hodnota = "Q";
+        } else if ($hodnota == 13){
+            $hodnota = "K";
+        } else if ($hodnota == 14){
+            $hodnota = "A";
+        }
+        $znak = random_int(1, 4);
+        if ($znak == 1){
+            $znak = "♥";
+            $farba = "cervena";
+        } else if ($znak == 2){
+            $znak = "♣";
+            $farba = "cierna";
+        } else if ($znak == 3){
+            $znak = "♠";
+            $farba = "cierna";
+        } else if ($znak == 4){
+            $znak = "♦";
+            $farba = "cervena";
+        }
+        echo "Hráč $i: " . "</br>";
+        echo $j . ". karta: " . $farba . " " . $znak . " " . $hodnota ;
+        echo "<br>";
+        }
+
+        
+
+    }
+    
     //uloha kazdy z textov bude vo fonte o 2 vacsi zaciname s 10px
     ?>
 
