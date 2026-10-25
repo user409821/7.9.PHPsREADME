@@ -21,20 +21,21 @@
     $cislo1 = 10;
     $cislo2 = 50;
     if($cislo1 != $cislo2){
-        echo "Toto sa vykona"
-        echo "<br>"
+        echo "Toto sa vykona";
+        echo "<br>";
     }
     if($cislo1 == $cislo2){
         echo "Tento kod sa nevykona";
-        echo "<br>"
+        echo "<br>";
 
     }
     else{
         echo "Tento kod sa vykona";
-        echo "<br>"
+        echo "<br>";
     }
 
-
+    ?>
+    <?php
     //Uloha na precvicenie si podmienok
     //vytvorne podmienku,kt. bude na zaklade poctu bodov vypisovat vase hodnotenie 
     //100-90% 1
@@ -53,7 +54,7 @@
         echo "Vase hodnotenie je 3";
 
     }
-    else if($body >= 46 && $ body < 60){
+    else if($body >= 46 && $body < 60){
         echo "Vase hodnotenie je 4";
     
     }
@@ -70,7 +71,7 @@
     //ak  si bol v base tak nesmies
     $suhlas = random_bool();
     $mestoJeSpisska = random_bool();
-    $oblecenieJeSlusne = random_bool() 
+    $oblecenieJeSlusne = random_bool() ;
     $vek = random_int(0, 100);
     $basa = random_bool();
     if ($basa == false){

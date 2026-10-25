@@ -17,29 +17,33 @@
     ini_set('display_errors', 1);
     //$mena = array();
     $fontsize = 10;
+    ?>
     <p style="font-size : <?php echo $fontsize; ?>px"></p>
+    <?php
     for($i = 0; $i < 10; $i += 2){
         //fontsize +2 nabuduce pisomka
         echo "najlepsia hodina na svete";
-        echo "br";
+        echo "<br>";
 
     }   
     ?>
+    <p style="font-size : 10px"></p>
     <?php
     //$mena = array();
-    <p style="font-size : 10px"></p>
     $fontsize = 10;
-    $red = random_int(0, 255);
-    $green = random_int(0, 255);
-    $blue = random_int(0, 255);
+    
     $k = 1;
-    while($k<10, $k++){
+    while($k<10){
         for($i = 0; $i < 10; $i++){
+            $red = random_int(0, 255);
+            $green = random_int(0, 255);
+            $blue = random_int(0, 255);
             //fontsize +2 nabuduce pisomka
             //slovo hodina ma v kazdom cykle nahodnu farbu
             echo "<p style='font-size: {$fontsize}px'>najlepsia <span style='color: RGB($red, $green, $blue)'>hodina</span> na svete</p>";
             echo "<br>";
             $fontsize += 5;
+            $k++;
 
         }
 
@@ -79,7 +83,7 @@
             $znak = "♦";
             $farba = "cervena";
         }
-        echo "Hráč $i: " . "</br>";
+        echo "Hráč $i: " . "<br>";
         echo $j . ". karta: " . $farba . " " . $znak . " " . $hodnota ;
         echo "<br>";
         }
