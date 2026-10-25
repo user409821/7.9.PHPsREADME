@@ -21,7 +21,8 @@
         echo "najlepsia hodina na svete";
         echo "br";
 
-    }
+    }   
+    ?>
     <?php
     //$mena = array();
     <p style="font-size : 10px"></p>
@@ -41,12 +42,15 @@
         }
 
     }
+    ?>
+    <?php
     //cyklus od 0 do 6, v kazdom cykle vytvorte kombinaciu kariet
     //kazdy dostane 2 karty
     //hodnoty 2-10, j(11), q(12), k(13), a(14) 
     //znaky 4 srdce ♥ ♣ ♠ ♦ 
-    do while()
-    for($i = 0; $i < 6; $i++){
+    $i = 0;
+    do{ 
+    
         
         for ($j = 1; $j <= 2; $j++){
         $hodnota = random_int(2, 14);
@@ -77,10 +81,12 @@
         echo $j . ". karta: " . $farba . " " . $znak . " " . $hodnota ;
         echo "<br>";
         }
+        $i++;
 
         
 
-    }
+    
+    } while($i < 6);
     
     //uloha kazdy z textov bude vo fonte o 2 vacsi zaciname s 10px
     ?>
