@@ -57,17 +57,17 @@
     $i = 0;
     do{ 
     
-        
+        echo "Hráč $i: " . "<br>";
         for ($j = 1; $j <= 2; $j++){
         $hodnota = random_int(2, 14);
         if ($hodnota == 11){
-            $hodnota = "J";
+            $hodnota = 'J';
         } else if ($hodnota == 12){
-            $hodnota = "Q";
+            $hodnota = 'Q';
         } else if ($hodnota == 13){
-            $hodnota = "K";
+            $hodnota = 'K';
         } else if ($hodnota == 14){
-            $hodnota = "A";
+            $hodnota = 'A';
         }
         $znak = random_int(1, 4);
         if ($znak == 1){
@@ -83,7 +83,7 @@
             $znak = "♦";
             $farba = "cervena";
         }
-        echo "Hráč $i: " . "<br>";
+        //"toto je string," 'toto je pismeno'
         echo $j . ". karta: " . $farba . " " . $znak . " " . $hodnota ;
         echo "<br>";
         }
@@ -93,7 +93,34 @@
 
     
     } while($i < 6);
-    
+
+
+    //horsia verzia :P
+    $prvaKarta = 0;
+    $druhaKarta = 0;
+    for ($i = 0; $i < 6; $i++){
+        $prvaKarta = random_int(2, 14);
+        $druhaKarta = random_int(2, 14);
+        if ($prvaKarta == 11){
+            $prvaKarta = 'J';
+        } else if ($prvaKarta == 12){
+            $prvaKarta = 'Q';
+        } else if ($prvaKarta == 13){
+            $prvaKarta = 'K';
+        } else if ($prvaKarta == 14){
+            $prvaKarta = 'A';
+        }
+        if ($druhaKarta == 11){
+            $druhaKarta = 'J';
+        } else if ($druhaKarta == 12){
+            $druhaKarta = 'Q';
+        } else if ($druhaKarta == 13){
+            $druhaKarta = 'K';
+        } else if ($druhaKarta == 14){
+            $druhaKarta = 'A';
+        }
+        echo "Hráč $i: " . "{$prvaKarta} {$druhaKarta}" . "<br>";
+    }
     //uloha kazdy z textov bude vo fonte o 2 vacsi zaciname s 10px
     ?>
 
