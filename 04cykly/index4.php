@@ -121,6 +121,7 @@
         }
         echo "Hráč $i: " . "{$prvaKarta} {$druhaKarta}" . "<br>";
     }
+    //pokracovanie v 05 - index5.php
     //uloha kazdy z textov bude vo fonte o 2 vacsi zaciname s 10px
     ?>
 
