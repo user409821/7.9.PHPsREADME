@@ -47,15 +47,24 @@
     for ($i = 0; $i <= 10; $i++) {
         $nahodneCislo = random_int(0, 1);
         if ($nahodneCislo == 0){
-            echo //zelenabodka
+            echo "<span style = 'color: green'>•</span>";
             echo "<br>";
         }
         else if ($nahodnecislo == 1){
-        echo //cervenabodka
+        echo "<span style = 'color: red'>•</span>";
         echo "<br>";
         }
     }
     ?>
+    //ULOHA 4 (trosku hard)
+    /*
+        Nacitajte 4 cisla do pola od 0 do 10
+        nacitajte cislo premennej target (sucet moznych cisel v poli)
+        vo vystupe by ste mali najs tu Nticu cisel, kt.
+        vam tvori hodnotu premennej target.
+        Vstup: nums = [2,7,11,15], target = 9;
+        Vystup: [0, 1];
+    */
     
 </body>
 </html>
