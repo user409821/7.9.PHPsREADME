@@ -33,14 +33,14 @@
     $fontsize = 10;
     
     $k = 1;
-    while($k<10){
+    while($k<100){
         for($i = 0; $i < 10; $i++){
             $red = random_int(0, 255);
             $green = random_int(0, 255);
             $blue = random_int(0, 255);
             //fontsize +2 nabuduce pisomka
             //slovo hodina ma v kazdom cykle nahodnu farbu
-            echo "<p style='font-size: {$fontsize}px'>najlepsia <span style='color: RGB($red, $green, $blue)'>hodina</span> na svete</p>";
+            echo "<p style='font-size: {$fontsize}px'>Najlepšia<span style='color: RGB($red, $green, $blue)'>hodina</span>na svete</p>";
             echo "<br>";
             $fontsize += 5;
             $k++;

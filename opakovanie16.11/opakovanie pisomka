@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    //1. uloha vytvorte cyklus od 50 do -20, vypise vsetky cisla v postupnosti 0.5
+    <?php 
+    $i = 50;
+    for ($i; $i >= -20; $i = $i - 0.5){
+        echo $i;
+        echo "<br>";
+    }
+    echo "<br>";
+    ?>
+    //2. uloha POLE [4, 23, 56, 23, 5, 66, 12, 2], sčitajte hodnoty parnych a neparnych zvlast
+    <?php
+    $pole = [4, 23, 56, 23, 5, 66, 12, 2];
+    $sucetparnych = 0;
+    $sucetneparnych = 0;
+    foreach ($pole as $cislo){
+        if ($cislo % 2 == 0){
+            $sucetparnych = $sucetparnych + $cislo;
+        }
+        else{
+            $sucetneparnych = $sucetneparnych + $cislo;
+        }
+    }
+    echo "Sucet parnych cisel je: " . $sucetparnych;
+    echo "Sucet neparnych cisel je: " . $sucetneparnych;
+    echo "<br>";
+    ?>
+    // ÚLOHA 3
+    /*
+     V cykle načítajte 10 náhodných čísel 
+     v rozsahu od 0 do 1. 
+    Pokiaľ je hodnota 0, vypíšte výsledok ako červenú bodku
+    Pokiaľ je hodnota 1, vypíšte výsledok ako zelenú bodku
+    Napr. vygenerované [0,1,1,0,1,0,1,0,0,0] 
+    Výsledok: [•(R), •(G),•(G), •(R), ...]
+    */
+    <?php
+    for ($i = 0; $i <= 10; $i++) {
+        $nahodneCislo = random_int(0, 1);
+        if ($nahodneCislo == 0){
+            echo //zelenabodka
+            echo "<br>";
+        }
+        else if ($nahodnecislo == 1){
+        echo //cervenabodka
+        echo "<br>";
+        }
+    }
+    ?>
+    
+</body>
+</html>
